@@ -1,0 +1,15 @@
+package com.rtpalab5.lab5;
+
+rule "T2"
+ruleflow-group "simpleRule"
+when
+	$r : Person(age < 18, amount <= 500) 
+then
+    $r.setName("Prio2: RULE1 fired.");
+    $r.setDivision(2);
+end
+
+
+//Define your rules here!!!
+//Take in mind that you just have to edit this file. Any changes of other files are not necessary!
+//Use the "validate" Button in the top right corner! ;-)
